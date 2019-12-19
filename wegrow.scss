@@ -1,0 +1,421 @@
+$growgreen: #253E0C;
+$growlight: #E8CF96;
+
+body{
+    background-color: #D2A12F;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 4px 16px;
+    text-align: center;
+    
+    
+    .loginbutton {
+        background-color: $growgreen;
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 9px;
+        font-weight: bold;
+        
+      }
+
+      .signupbutton {
+        background-color: $growgreen;
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 9px;
+        font-weight: bold;
+      }
+    
+      .logo {
+        width: 125.75px;
+        height: 100.5px;
+        
+    }
+    
+
+}
+
+
+
+  input[type=text] {
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    width: 60%;
+  }
+
+  input[type=submit]{
+    background-color: $growgreen;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .buttonholder{
+    text-align: center;
+  }
+
+  .search button:hover {
+    background: #ccc;
+  }
+
+  .search{
+      text-align: center;
+      background-color: transparent;
+  }
+
+  .search button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+   
+  }
+
+  .section1{
+    background-color: $growlight;
+    display: table-row;
+    height: 100%;
+    
+     h3{
+      padding-left: 16px;
+      padding-top: 20px;
+      color: $growgreen;
+      }
+  
+    }
+ 
+
+  .mainpic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7%;
+  }
+
+
+
+  nav{
+    background: $growlight;
+    color:  $growgreen;
+    list-style: none;
+    clear: both;
+    padding-bottom: 5px;
+    margin:0;
+    padding:12px;
+    text-align:center;
+    font-weight: bold;
+    
+    
+  }
+  nav li{
+    display: inline;
+    margin: 45px;
+    padding-bottom: 20px;
+    
+    
+  }
+  a { color: inherit; } 
+  
+  .burger div{
+    width: 35px;
+    height: 5px;
+    background: #253E0C;
+    margin: 6px 0;
+  }
+  
+  #burger{
+    float:right;
+    visibility: hidden;
+    margin:5px;
+  }
+
+
+  @media screen and (max-width:700px){
+    #burger{
+      visibility: visible;
+    }
+    .burger{
+      display: block;
+      height: 40px;
+      width: 30px;
+      float: right;
+      cursor: pointer;
+      
+    }
+    nav{
+      list-style: none;
+      overflow: hidden;
+      min-height: 40px;
+      margin: 0px auto;
+
+    }
+    nav li {
+      display: none;
+    }
+    nav li.open{
+      float: none;
+      text-align: left;
+      margin: 0;
+      visibility: visible;
+      display: block;
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .slogan{
+    text-align: center;
+    h1{
+      color: $growgreen;
+    }
+  }
+
+form{
+    background-color: $growlight;
+
+h2{
+    text-align: center;
+    font-family: monospace;
+    font-size: 250%;
+    color: $growgreen;
+    border-style: solid;
+}
+
+legend{
+font-size: 170%;
+}
+
+img{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+}
+
+.top{
+    background-color: white;
+}
+
+#title{
+    color: $growgreen;
+}
+}
+
+.post{
+  background-color: $growlight;
+  align-items: center;
+}
+
+
+.useraccount{
+  background-color: $growlight;
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 70px;
+    grid-row-gap: 3.5em;
+}
+
+.createaccount{
+    color: $growgreen;
+    text-align: center;
+}
+
+#usericon{
+  height: 300px; 
+  width: 300px; 
+  border-radius: 50%;
+  overflow: hidden;
+  border-style: solid;
+  border-color:  #D8C415;
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+}
+
+#userimage{
+  max-width: 150%;
+  max-height: 150%;
+
+}
+
+.bio{
+  text-align: center;
+  color: $growgreen;
+  padding-bottom: 30px;
+}
+
+.sellinginfo{
+  background-color: #D8C415;
+  height:170px;
+  width: 300px;
+  border-radius: 5%;
+  border-style: solid;
+  border-width: thin;
+  border-color: $growgreen;
+  color: $growgreen;
+}
+
+.leftside, .rightside{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.searchresult{
+  background-color: $growlight;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-top: 70px;
+    grid-row-gap: 1.5em;
+   
+}
+
+.produceicon{
+  height: 250px; 
+  width: 250px; 
+  border-radius: 10%;
+  overflow: hidden;
+  border-style: solid;
+  border-color:  #D8C415;
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+  
+}
+
+#p_desc{
+  color: $growgreen;
+  text-align: center;
+  background-color: $growlight;
+}
+
+#desc_img {
+  border-radius: 6%;
+  width: 60%;
+  height: auto;
+  
+}
+
+.item_image{
+  text-align: center;
+ 
+ 
+}
+
+.bio{
+  background-color: $growlight;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding-top: 70px;
+  grid-row-gap: 1.5em;
+}
+
+.bioicon{
+  background-color: $growlight;
+
+}
+
+#usericon2{
+  height: 300px; 
+  width: 300px; 
+  border-radius: 50%;
+  overflow: hidden;
+  border-style: solid;
+  border-color:  #D8C415;
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+}
+
+p{
+  font-size: 150%;
+}
+
+#itmdes{
+  font-size: 100%;
+  font-style: oblique;
+}
+
+
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 70%; /* Full width */
+  padding: 6px; /* Some padding */ 
+  border: 4px solid $growlight; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit], input[type=button] {
+  background-color: $growgreen;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  background-color: $growlight;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.chkmsg{
+  text-align: center;
+}
